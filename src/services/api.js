@@ -28,7 +28,7 @@ const getWeather = async (city, country) => {
     return response.data;
   } catch (error) {
     console.log("Error while calling the API:", error.message);
-    throw error;
+    throw errors;
   }
 };
 
