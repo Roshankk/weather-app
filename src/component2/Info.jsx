@@ -64,6 +64,8 @@ const Info = ({ result }) => {
       <Row>
             <Cloud/>
             Cloud: {result.clouds.all}%
+            <br />
+        Current Time: {new Date().toLocaleTimeString()}
       </Row>
     </Box>
   ) : <Error >
