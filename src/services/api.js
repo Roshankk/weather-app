@@ -38,9 +38,9 @@
 
 import axios from "axios";
 
-const API_KEY = "c49c2d27d39bb278974c13f0f52a4fce";
+const API_KEY = peosess.env.REACT_APP_WEATHER_API_KEY;
 
- const API_URL = "http://api.openweathermap.org/data/2.5/weather";
+ const API_URL = process.env.REACT_APP_WEATHER_API_URL;
 
  const getWeather = async (city, country) => {
    try {
